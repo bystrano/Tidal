@@ -1,5 +1,10 @@
-;; tidal.el - (c) alex@slab.org, 20012, based heavily on...
+;;; tidal.el --- mode for editing Tidal Cycles files
+
+;; Copyright (C) 2012 alex@slab.org
+;; based heavily on...
 ;; hsc3.el - (c) rohan drape, 2006-2008
+
+;;; Commentary:
 
 ;; notes from hsc3:
 ;; This mode is implemented as a derivation of `haskell' mode,
@@ -8,11 +13,14 @@
 ;; point acquisition is courtesy `thingatpt'.  The directory search
 ;; facilities are courtesy `find-lisp'.
 
+;;; Code:
+
 (require 'scheme)
 (require 'comint)
 (require 'thingatpt)
 (require 'find-lisp)
 (require 'pulse)
+
 
 (defvar tidal-buffer
   "*tidal*"
@@ -478,3 +486,4 @@
 (add-to-list 'auto-mode-alist '("\\.tidal$" . tidal-mode))
 
 (provide 'tidal)
+;;; tidal.el ends here
